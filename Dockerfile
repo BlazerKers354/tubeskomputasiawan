@@ -1,4 +1,3 @@
-# Menggunakan image PHP yang sudah dilengkapi dengan ekstensi yang dibutuhkan
 FROM php:8.1-fpm
 
 # Install dependencies
@@ -12,10 +11,8 @@ RUN apt-get update && apt-get install -y \
     zip \
     unzip \
     git \
-    curl
-
-# Install ekstensi PHP yang dibutuhkan oleh Laravel
-RUN docker-php-ext-install pdo pdo_mysql mbstring exif pcntl bcmath gd
+    curl \
+    && docker-php-ext-install pdo pdo_mysql mbstring exif pcntl bcmath gd
 
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
@@ -30,9 +27,13 @@ COPY . .
 RUN composer install
 
 # Set permission untuk folder storage dan bootstrap
-RUN chown -R www-data:www-data /var/www \
-    && chmod -R 775 /var/www/storage \
-    && chmod -R 775 /var/www/bootstrap/cache
+RUN mkdir -p /var/www/storage /var/www/bootstrap/cache && \
+    chown -R www-data:www-data /var/www && \
+    chmod -R 775 /var/www/storage && \
+    chmod -R 775 /var/www/bootstrap/cache
+
+# Gunakan user www-data
+USER www-data
 
 # Expose port 9000 untuk PHP-FPM
 EXPOSE 9000
