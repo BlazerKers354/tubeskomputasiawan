@@ -4,11 +4,9 @@
     <div class="row mt-4 align-items-center">
         <div class="col-md-6">
             <div class="content-text">
-                toko buku online adalah sebuah aplikasi yang menyediakan berbagai macam buku yang dapat anda beli dengan
-                harga
-                yang terjangkau dan kualitas yang terjamin. Kami menyediakan berbagai macam buku mulai dari buku pelajaran,
-                novel,
-                buku anak-anak, dan lain-lain. Kami juga menyediakan berbagai
+            DFIE Catering adalah usaha catering yang berbasis di Surabaya, yang hadir untuk memenuhi kebutuhan konsumsi acara Anda dengan cita rasa lezat dan pelayanan yang terbaik. Kami menyediakan berbagai pilihan menu, mulai dari hidangan lokal, internasional, hingga menu khusus sesuai permintaan pelanggan. Dengan pengalaman yang mumpuni di bidang catering, DFIE Catering menjamin kualitas bahan baku yang segar, proses pengolahan yang higienis, dan pelayanan yang profesional.
+
+Kami melayani berbagai acara, seperti pernikahan, ulang tahun, rapat perusahaan, dan event lainnya dengan berbagai paket harga yang dapat disesuaikan dengan anggaran dan kebutuhan pelanggan. Komitmen kami adalah memberikan pengalaman kuliner yang memuaskan dan memastikan setiap acara berjalan lancar dengan hidangan yang menggugah selera.
 
             </div>
         </div>
