@@ -22,7 +22,15 @@ class UpdateproductRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'sku' => 'required|string|max:255',
+            'nama_product' => 'required|string|max:255',
+            'type' => 'required|string',
+            'kategory' => 'required|string',
+            'harga' => 'required|numeric',
+            'quantity' => 'required|integer',
+            'discount' => 'nullable|numeric',
+            'is_active' => 'required|boolean',
+            'foto' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
         ];
     }
 }

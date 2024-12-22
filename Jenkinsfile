@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "blazerkers/tubescc:${BUILD_NUMBER}"
-        // DOCKER_USERNAME = credentials("docker-tubes")
+        DOCKER_IMAGE = "serliapril284/tubes_komputasi:${BUILD_NUMBER}"
+		// DOCKER_USERNAME = credentials("docker-tubes")
         // DOCKER_PASSWORD = credentials("docker-tubes")
         DISCORD_WEBHOOK = credentials("webhook-discord")
     }
@@ -11,10 +11,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                script {
-                    // Clone the GitHub repository explicitly
-                    git 'https://github.com/BlazerKers354/tubeskomputasiawan.git'
-                }
+                checkout scm
             }
         }
 
