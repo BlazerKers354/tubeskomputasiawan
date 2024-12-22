@@ -1,6 +1,6 @@
 <nav class="navbar navbar-dark navbar-expand-lg" style="background-color: #025464">
     <div class="container">
-        <a class="navbar-brand" href="#">Toko Pakaian Canggih</a>
+        <a class="navbar-brand" href="#">Dfie Catering</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

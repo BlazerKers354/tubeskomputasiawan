@@ -8,6 +8,7 @@ use App\Http\Requests\UpdateproductRequest;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\View;
 use RealRashid\SweetAlert\Facades\Alert;
+use Illuminate\Support\Facades\Auth;
 
 class ProductController extends Controller
 {

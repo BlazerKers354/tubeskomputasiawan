@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ExportController;
 use App\Http\Controllers\FavoriteController;
 use App\Http\Controllers\FeedbackController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
