@@ -98,3 +98,8 @@ Route::post('/admin/feedback', [FeedbackController::class, 'store'])->name('admi
 
 // Assuming the route for contact_us is something like this
 Route::get('/pelanggan/contact-us', [FeedbackController::class, 'store'])->name('pelanggan.page.contact_us');
+
+
+Route::get('/product', [ProductController::class, 'index'])->name('product');
+Route::resource('product', ProductController::class);
+Route::post('/product/{id}/update', [ProductController::class, 'update'])->name('product.update');
